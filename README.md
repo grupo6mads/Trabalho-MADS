@@ -47,7 +47,7 @@ pip install pandas matplotlib folium
 ```
 
 ```python
-from modulo import *
+import restaurantesGrupo6
 ```
 
 ---
