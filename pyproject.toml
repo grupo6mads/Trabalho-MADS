@@ -1,0 +1,23 @@
+[project]
+name = "gestao-restaurantes"
+version = "0.1.0"
+description = "Sistema de gestão de restaurantes para fins académicos"
+authors = [
+    {name = "Teu Nome"}
+]
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "Academic Use Only - Non Commercial"}
+
+dependencies = [
+    "pandas",
+    "matplotlib",
+    "folium"
+]
+
+[tool.setuptools]
+py-modules = ["modulo"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
