@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/gestao_restaurantes.egg-info/PKG-INFO
+src/gestao_restaurantes.egg-info/SOURCES.txt
+src/gestao_restaurantes.egg-info/dependency_links.txt
+src/gestao_restaurantes.egg-info/requires.txt
+src/gestao_restaurantes.egg-info/top_level.txt
+src/restaurantesGrupo6/__init__.py
+src/restaurantesGrupo6/modulo.py

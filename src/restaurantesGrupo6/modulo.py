@@ -403,26 +403,6 @@ def historico_rating_atemporal(nif):
 
     plt.figure(figsize=(10, 5))
     plt.plot(df_restaurante["Ordem"], df_restaurante["Rating"], marker='o', linestyle='-', color="#007acc", label="Rating")
-def listar_menus_restaurante(nif):
-    """Lista menus e itens de um restaurante"""
-
-    if nif not in restaurantes:
-        print("Erro: Restaurante não existe.")
-        return
-
-    if "Menus" not in restaurantes[nif]:
-        print("Sem menus.")
-        return
-
-    for id_menu in restaurantes[nif]["Menus"]:
-        menu = menus[id_menu]
-
-        print(f"\nMenu: {menu['Nome']}")
-
-        for i, item in enumerate(menu["Itens"], 1):
-            print(f"  {i}. {item['Nome']} - {item['Preco']}€")
-
-
     plt.title(f"Evolução de Rating (ordem de inserção) - {nome} (NIF: {nif})", fontsize=14, weight="bold")
     plt.xlabel("Medição", fontsize=12)
     plt.ylabel("Rating", fontsize=12)

@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: gestao-restaurantes
+Version: 2.4.0
+Summary: Sistema de gestão de restaurantes para fins académicos
+Author: Grupo6MADS
+Requires-Python: >=3.8
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: folium
