@@ -179,7 +179,7 @@ def historico_restaurante(nif):
         return
 
     df = pd.DataFrame(hist)
-    display(df)
+    print(df)
 
 """# Função para Associar Menus a Restaurantes"""
 
@@ -264,20 +264,20 @@ def list_restaurantes():
 
     df = pd.DataFrame([{**{"NIF": nif}, **dados} for nif, dados in restaurantes.items()])
     df = df[["Nome", "NIF", "Preco", "Avaliacao", "Tipo", "Rating", "Localizacao", "Lat","Lon"]]
-    display(df)
+    print(df)
 
 def list_by_rating_decrescente():
     """ Lista restaurantes ordenadas pelo rating de forma decrescente """
     df = pd.DataFrame([{**{"NIF": nif}, **dados} for nif, dados in restaurantes.items()]).sort_values(by="Rating", ascending=False)
     df = df[["Nome", "NIF", "Preco", "Avaliacao", "Tipo", "Rating", "Localizacao", "Lat","Lon"]]
-    display(df)
+    print(df)
 
 def list_by_crit_rating():
     """ Lista restaurantes com rating fora da faixa saudável (Rating > 25 ou < 18.5) """
     df = pd.DataFrame([{**{"NIF": nif}, **dados} for nif, dados in restaurantes.items()]).sort_values(by="Rating", ascending=False)
     df = df[["Nome", "NIF", "Preco", "Avaliacao", "Tipo", "Rating", "Localizacao", "Lat","Lon"]]
     df_crit = df[(df["Rating"] > 25) | (df["Rating"] < 18.5)]
-    display(df_crit)
+    print(df_crit)
 def listar_clientes():
     """Lista todos os clientes registados"""
 
@@ -286,7 +286,7 @@ def listar_clientes():
         return
 
     df = pd.DataFrame(clientes.values())
-    display(df)
+    print(df)
 def listar_pedidos_cliente(id_cliente):
     """Lista todos os pedidos de um cliente"""
 
@@ -301,7 +301,7 @@ def listar_pedidos_cliente(id_cliente):
         return
 
     df = pd.DataFrame(pedidos_cliente)
-    display(df)
+    print(df)
 def listar_menus():
     """Lista todos os menus com os seus itens"""
 
@@ -342,13 +342,13 @@ def tabela_avaliacao():
     """ Demonstra uma tabela com a avaliação de todos os restaurantes registados """
     df = pd.DataFrame([{**{"NIF": nif}, **dados} for nif, dados in restaurantes.items()])
     df = df[["Nome", "NIF", "Avaliacao"]]
-    display(df)
+    print(df)
 
 def tabela_preco():
     """ Demonstra uma tabela com o preço de todos os restaurantes registados """
     df = pd.DataFrame([{**{"NIF": nif}, **dados} for nif, dados in restaurantes.items()])
     df = df[["Nome", "NIF", "Preco"]]
-    display(df)
+    print(df)
 
 def historico_rating(nif):
     """ Mostra gráfico de histórico de rating com datas exatas inseridas """
