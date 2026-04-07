@@ -1,13 +1,11 @@
 [project]
 name = "gestao-restaurantes"
-version = "2.0.0"
+version = "2.2.0"
 description = "Sistema de gestão de restaurantes para fins académicos"
 authors = [
-    {name = "Teu Nome"}
+    {name = "Grupo6MADS"}
 ]
-readme = "README.md"
 requires-python = ">=3.8"
-license = {text = "Academic Use Only - Non Commercial"}
 
 dependencies = [
     "pandas",
@@ -17,8 +15,7 @@ dependencies = [
 
 [tool.setuptools.packages.find]
 where = ["src"]
-include = ["restaurantesGrupo6*"]
 
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
