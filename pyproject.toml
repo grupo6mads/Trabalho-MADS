@@ -1,6 +1,6 @@
 [project]
 name = "gestao-restaurantes"
-version = "2.4.0"
+version = "2.4.1"
 description = "Sistema de gestão de restaurantes para fins académicos"
 authors = [
     {name = "Grupo6MADS"}
