@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+gestao_restaurantes.egg-info/PKG-INFO
+gestao_restaurantes.egg-info/SOURCES.txt
+gestao_restaurantes.egg-info/dependency_links.txt
+gestao_restaurantes.egg-info/requires.txt
+gestao_restaurantes.egg-info/top_level.txt
